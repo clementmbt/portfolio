@@ -1,0 +1,342 @@
+/* fonts */
+@font-face {
+  font-family: "Raleway Reg";
+  src: url("Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway Ita";
+  src: url("Raleway-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway Lig";
+  src: url("Raleway-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway Thi";
+  src: url("Raleway-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway Thi Ita";
+  src: url("Raleway-ThinItalic.ttf") format("truetype");
+}
+.typo-raleway-reg{
+  font-family: "Raleway Reg";
+}
+.typo-raleway-thi{
+  font-family: "Raleway Thi";
+}
+.typo-raleway-lig{
+  font-family: "Raleway Lig";
+}
+.typo-raleway-thiita{
+  font-family: "Raleway Thi Ita";
+}
+
+/* general settings */
+* {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+
+  --color-text: #ffffff;
+  --color-background: #0f0f0f;
+  --color-gridcell: #ffffff;
+  --color-scroll-hover: #f2f2f2;
+
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-text);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.logo {
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+  width: 12vw;
+  height: auto;
+}
+.menu {
+  font-size: 5vw;
+  text-align: right;
+  margin-top: 5vw;
+  margin-right: 4vw;
+}
+.big-title {
+  font-size: 18vw;
+  text-align: center;
+  margin-top: 6vw;
+}
+.big-title-left {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 14vw;
+    margin-top: 5vw;
+    margin-left: 8vw;
+}
+.big-title-right {
+    writing-mode: vertical-rl;
+    font-size: 18vw;
+    margin-top: 5vw;
+    margin-left: 5vw;
+}
+.big-title-bot {
+  text-align: center;
+  font-size: 12vw;
+  margin-top: 8vw;
+}
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-gap: 1px;
+  background-color: var(--color-gridcell);
+  grid-template-areas: "empty_small empty_small empty_small"
+  "cube_small_0 cube_small_1 cube_small_2"
+  "empty_large_1 empty_large_1 empty_large_1"
+  "cube_0 cube_1 cube_5"
+  "cube_0 cube_4 cube_5"
+  "cube_7 cube_7 cube_5"
+  "empty_large_2 empty_large_2 empty_large_2"
+  "about_title about_title cube_8"
+  "about_text about_text about_text"
+  "about_learn about_learn cube_9"
+  "cube_10 cube_11 cube_12"
+  "profile_picture profile_picture profile_picture"
+  "cube_13 cube_14 cube_15"
+  "edu_text edu_text edu_text"
+  "edu_card_title_0 edu_card_text_0 edu_card_text_0"
+  "edu_card_title_1 edu_card_text_1 edu_card_text_1"
+  "cube_16 cube_17 cube_18"
+  "edu_card_text_2 edu_card_text_2 edu_card_title_2"
+  "edu_card_text_3 edu_card_text_3 edu_card_title_3"
+  "cube_19 cube_20 cube_21"
+  "work_title work_title cube_22"
+  "work_text work_text work_text"
+  "scrolling_text scrolling_text cube_23"
+  "cube_24 cube_25 cube_26"
+  "cube_27 work_sub work_sub"
+  "work_card_0 work_card_0 work_card_0"
+  "work_card_1 work_card_1 work_card_1"
+  "work_card_2 work_card_2 work_card_2"
+  "work_card_3 work_card_3 work_card_3"
+  "work_card_4 work_card_4 work_card_4"
+  "work_card_5 work_card_5 work_card_5"
+  "large_small large_small large_small"
+  "social_0 social_1 social_2"
+  "social_3 social_mail social_mail"
+  "large_empty_1 large_empty_1 large_empty_1"
+  "large_empty_2 large_empty_2 large_empty_2";
+  grid-template-columns: 33.1vw 33.1vw 33.1vw;
+  grid-template-rows: 16.5vw 16.5vw 33vw 33vw 33vw 33vw 33vw 33vw 66vw 33vw 33vw 132vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 66vw 33vw 33vw 33vw 99vw 99vw 99vw 99vw 99vw 99vw 16.5vw 16.5vw 16.5vw 16.5vw 16.5vw;
+}
+.container > div {
+}
+
+.empty_small {
+  grid-area: empty_small;
+}
+.cube_small_0 {
+  grid-area: cube_small_0;
+}
+.cube_small_1 {
+  grid-area: cube_small_1;
+}
+.cube_small_2 {
+  grid-area: cube_small_2;
+}
+.empty_large_1 {
+  grid-area: empty_large_1;
+}
+.cube_0 {
+  grid-area: cube_0;
+}
+.cube_1 {
+  grid-area: cube_1;
+}
+.cube_5 {
+  grid-area: cube_5;
+}
+.cube_4 {
+  grid-area: cube_4;
+}
+.cube_7 {
+  grid-area: cube_7;
+}
+.empty_large_2 {
+  grid-area: empty_large_2;
+}
+.about_title {
+  grid-area: about_title;
+}
+.cube_8 {
+  grid-area: cube_8;
+}
+.about_text {
+  grid-area: about_text;
+}
+.about_learn {
+  grid-area: about_learn;
+}
+.cube_9 {
+  grid-area: cube_9;
+}
+.cube_10 {
+  grid-area: cube_10;
+}
+.cube_11 {
+  grid-area: cube_11;
+}
+.cube_12 {
+  grid-area: cube_12;
+}
+.profile_picture {
+  grid-area: profile_picture;
+}
+.cube_13 {
+  grid-area: cube_13;
+}
+.cube_14 {
+  grid-area: cube_14;
+}
+.cube_15 {
+  grid-area: cube_15;
+}
+.edu_text {
+  grid-area: edu_text;
+}
+.edu_card_title_0 {
+  grid-area: edu_card_title_0;
+}
+.edu_card_text_0 {
+  grid-area: edu_card_text_0;
+}
+.edu_card_title_1 {
+  grid-area: edu_card_title_1;
+}
+.edu_card_text_1 {
+  grid-area: edu_card_text_1;
+}
+.cube_16 {
+  grid-area: cube_16;
+}
+.cube_17 {
+  grid-area: cube_17;
+}
+.cube_18 {
+  grid-area: cube_18;
+}
+.edu_card_text_2 {
+  grid-area: edu_card_text_2;
+}
+.edu_card_title_2 {
+  grid-area: edu_card_title_2;
+}
+.edu_card_text_3 {
+  grid-area: edu_card_text_3;
+}
+.edu_card_title_3 {
+  grid-area: edu_card_title_3;
+}
+.cube_19 {
+  grid-area: cube_19;
+}
+.cube_20 {
+  grid-area: cube_20;
+}
+.cube_21 {
+  grid-area: cube_21;
+}
+.work_title {
+  grid-area: work_title;
+}
+.cube_22 {
+  grid-area: cube_22;
+}
+.work_text {
+  grid-area: work_text;
+}
+.scrolling_text {
+  grid-area: scrolling_text;
+}
+.cube_23 {
+  grid-area: cube_23;
+}
+.cube_24 {
+  grid-area: cube_24;
+}
+.cube_25 {
+  grid-area: cube_25;
+}
+.cube_26 {
+  grid-area: cube_26;
+}
+.cube_27 {
+  grid-area: cube_27;
+}
+.work_sub {
+  grid-area: work_sub;
+}
+.work_card_0 {
+  grid-area: work_card_0;
+}
+.work_card_1 {
+  grid-area: work_card_1;
+}
+.work_card_2 {
+  grid-area: work_card_2;
+}
+.work_card_3 {
+  grid-area: work_card_3;
+}
+.work_card_4 {
+  grid-area: work_card_4;
+}
+.work_card_5 {
+  grid-area: work_card_5;
+}
+.large_small {
+  grid-area: large_small;
+}
+.social_0 {
+  grid-area: social_0;
+}
+.social_1 {
+  grid-area: social_1;
+}
+.social_2 {
+  grid-area: social_2;
+}
+.social_3 {
+  grid-area: social_3;
+}
+.social_mail {
+  grid-area: social_mail;
+}
+.large_empty_1 {
+  grid-area: large_empty_1;
+}
+.large_empty_2 {
+  grid-area: large_empty_2;
+}
