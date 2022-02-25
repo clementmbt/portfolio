@@ -38,10 +38,16 @@
   padding: 0px;
   overflow-x: hidden;
 
+  -moz-user-select: none!important;
+  -webkit-user-select: none!important;
+  -ms-user-select: none!important;
+  user-select: none!important;
+
   --color-text: #ffffff;
   --color-background: #0f0f0f;
   --color-gridcell: #ffffff;
   --color-scroll-hover: #f2f2f2;
+  --color-scroll-scrollbar: #ffffff;
 
   background-color: var(--color-background);
   color: var(--color-text);
@@ -54,17 +60,14 @@
 ::-webkit-scrollbar {
   width: 6px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   background: var(--color-background);
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--color-text);
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
