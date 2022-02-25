@@ -19,16 +19,16 @@
   font-family: "Raleway Thi Ita";
   src: url("Raleway-ThinItalic.ttf") format("truetype");
 }
-.typo-raleway-reg{
+.typo_raleway_reg{
   font-family: "Raleway Reg";
 }
-.typo-raleway-thi{
+.typo_raleway_thi{
   font-family: "Raleway Thi";
 }
-.typo-raleway-lig{
+.typo_raleway_lig{
   font-family: "Raleway Lig";
 }
-.typo-raleway-thiita{
+.typo_raleway_thiita{
   font-family: "Raleway Thi Ita";
 }
 
@@ -46,7 +46,7 @@
   background-color: var(--color-background);
   color: var(--color-text);
 }
-.text-uppercase{
+.text_uppercase{
   text-transform: uppercase;
 }
 /* scrollbar */
@@ -106,6 +106,129 @@
   font-size: 12vw;
   margin-top: 8vw;
 }
+.case {
+  padding-top: 4vw;
+  padding-left: 8vw;
+}
+.case_number {
+  font-size: 8vw;
+}
+.case_title {
+  font-size: 12vw;
+}
+.case_text {
+  padding-top: 6vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  text-align: justify;
+}
+.about_learn{
+  padding-top: 11vw;
+}
+.case_learn{
+  text-decoration: none;
+  font-size: 8vw;
+  padding-left: 8vw;
+}
+.profile_picture > img {
+  width: 80vw;
+  height: auto;
+  padding-top: 6vw;
+  padding-left: 10vw;
+}
+.edu_text {
+  padding-left: 8vw;
+  padding-top: 8vw;
+}
+.edu_text_title {
+  font-size: 12vw;
+}
+.edu_card_title{
+  font-size: 5vw;
+  text-align: center;
+  margin-top: 14vw;
+}
+.edu_card_container {
+  text-align: left;
+  padding-left: 6vw;
+  padding-right: 5vw;
+  padding-top: 8vw;
+}
+.work_sub_title {
+  font-size: 10vw;
+  text-align: center;
+  padding-top: 4vw;
+}
+.work_card_img{
+  width: 90vw;
+  height: auto;
+  padding-top: 5vw;
+  padding-left: 5vw;
+  filter: grayscale(100%);
+  overflow: hidden!important;
+}
+.social{
+  text-align: center;
+  font-size: 6vw;
+  padding-top: 5vw;
+}
+.social > a {
+  text-decoration: none;
+}
+.social_mail{
+  padding-top: 5vw;
+  text-align: center;
+}
+.social_mail > a {
+  text-decoration: none;
+  font-size: 6vw;
+}
+.credits {
+  font-size: 4vw;
+  padding-top: 6vw;
+  text-align: center;
+}
+/* Animation */
+.work-learn{
+  text-align: center;
+  font-size: 8vw;
+  margin-top: 11vw;
+
+  /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+
+  -moz-animation: my-animation 10s linear infinite;
+  -webkit-animation: my-animation 10s linear infinite;
+  animation: my-animation 10s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(-100%); }
+  to { -moz-transform: translateX(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(-100%); }
+  to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+/* Grid settings*/
 .container {
   display: grid;
   width: 100%;
@@ -148,7 +271,7 @@
   "social_3 social_mail social_mail"
   "large_empty_1 large_empty_1 large_empty_1"
   "large_empty_2 large_empty_2 large_empty_2";
-  grid-template-columns: 33.1vw 33.1vw 33.1vw;
+  grid-template-columns: 33.3vw 33.3vw 33.4vw;
   grid-template-rows: 16.5vw 16.5vw 33vw 33vw 33vw 33vw 33vw 33vw 66vw 33vw 33vw 132vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 33vw 66vw 33vw 33vw 33vw 99vw 99vw 99vw 99vw 99vw 99vw 16.5vw 16.5vw 16.5vw 16.5vw 16.5vw;
 }
 .container > div {
