@@ -89,17 +89,17 @@
   margin-top: 6vw;
 }
 .big-title-left {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-size: 14vw;
-    margin-top: 5vw;
-    margin-left: 8vw;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 14vw;
+  margin-top: 5vw;
+  margin-left: 8vw;
 }
 .big-title-right {
-    writing-mode: vertical-rl;
-    font-size: 18vw;
-    margin-top: 5vw;
-    margin-left: 5vw;
+  writing-mode: vertical-rl;
+  font-size: 18vw;
+  margin-top: 5vw;
+  margin-left: 5vw;
 }
 .big-title-bot {
   text-align: center;
@@ -199,24 +199,24 @@
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
 
-  -moz-animation: my-animation 10s linear infinite;
-  -webkit-animation: my-animation 10s linear infinite;
-  animation: my-animation 10s linear infinite;
+  -moz-animation: scrolling_anim 6s linear infinite;
+  -webkit-animation: scrolling_anim 6s linear infinite;
+  animation: scrolling_anim 6s linear infinite;
 }
 
 /* for Firefox */
-@-moz-keyframes my-animation {
+@-moz-keyframes scrolling_anim {
   from { -moz-transform: translateX(-100%); }
   to { -moz-transform: translateX(100%); }
 }
 
 /* for Chrome */
-@-webkit-keyframes my-animation {
+@-webkit-keyframes scrolling_anim {
   from { -webkit-transform: translateX(-100%); }
   to { -webkit-transform: translateX(100%); }
 }
 
-@keyframes my-animation {
+@keyframes scrolling_anim {
   from {
     -moz-transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
