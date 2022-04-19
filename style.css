@@ -404,6 +404,18 @@ footer ul li a:hover:after {
 
 /****************************/
 
+/* Copy section begins */
+
+.copy {
+    text-align: center;
+    font-size: .7rem;
+    color: #bbbbbb;
+}
+
+/* Copy section ends */
+
+/****************************/
+
 /* PopUp section begins */
 .popUp{
     color: black;
