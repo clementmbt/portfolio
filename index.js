@@ -58,7 +58,7 @@ const windowLoaded = () => {
           .closest('.project-figure')
           .children('img')
           .attr('src');
-
+/*
         const projetGithubRepo = $(e.target)
           .closest('.project-figure')
           .children('figcaption')
@@ -70,7 +70,7 @@ const windowLoaded = () => {
           .children('figcaption')
           .children('#livePreview')
           .attr('href');
-
+*/
         //  END OF data of the project clicked.
         // setting the PARAGRAPH of the popUp to match that of the project clicked.
         $(popUpElem)
@@ -90,7 +90,7 @@ const windowLoaded = () => {
           .css('backgroundImage', `url(${projectImg})`);
 
         // setting up the github linking here
-        $(popUpElem)
+        /*$(popUpElem)
           .children('#popUpText')
           .children('div')
           .children('#githubLink')
@@ -101,7 +101,7 @@ const windowLoaded = () => {
           .children('#popUpText')
           .children('div')
           .children('#previewLink')
-          .attr('href', `${projectLivePreview}`);
+          .attr('href', `${projectLivePreview}`);*/
       }
     }
   });
