@@ -1,5 +1,28 @@
 /* Just a simple reset section */
 
+.inwork {
+  margin-top: 30vw;
+}
+.main-build{
+  width: 100%;
+  text-align: center;
+  margin-top: 5vw;
+}
+.main-build img{
+  position: absolute;
+  top: 10vw;
+  width: 20vw;
+  height: 20vw;
+  left: 40vw;
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+    .main-build img {
+        width: 80vw;
+        height: 80vw;
+        left: 10vw;
+    }
+}
 .footer ul {
     margin: 0;
     padding: 0;
@@ -18,7 +41,7 @@ html {
 
 *,*::before,*::after {
     box-sizing: inherit;
-    
+
 }
 
 * {
@@ -494,7 +517,7 @@ footer ul li a:hover:after {
 .popUp div:nth-child(2){
     padding: 10vh 2em;
     position: relative;
-} 
+}
 
 .popUp span{
     display: block;
@@ -506,7 +529,7 @@ footer ul li a:hover:after {
     background-color: black;
     color: honeydew;
     text-align: center;
-    right: 5%; 
+    right: 5%;
     cursor: pointer;
     user-select: none;
 }
@@ -591,16 +614,16 @@ footer ul li a:hover:after {
 /* ************************************ */
 
 /* Styling for form on DESKTOP/PC VIEW  */
-#form { 
+#form {
   width: 60%;
   margin: 0 auto;
   text-align: left;
 }
-#form h1 { 
+#form h1 {
   font-size: 2em;
   text-transform: uppercase;
 }
-#form p{ 
+#form p{
   margin-bottom: 3.2em;
   font-size: 1em;
   color: white;
@@ -609,11 +632,11 @@ footer ul li a:hover:after {
   padding: 0.4em;
   border-radius: 100px;
 }
-#form form { 
+#form form {
   display: block;
   padding: 1em auto;
 }
-#form form input { 
+#form form input {
   display: block;
   width: 80%;
   padding: 1em;
@@ -626,10 +649,10 @@ footer ul li a:hover:after {
   border: 1px solid #000000a6;
   transition: 0.8s;
 }
-#form form input:focus { 
+#form form input:focus {
   border: 1.2px solid #1004c5;
 }
-#form form textarea { 
+#form form textarea {
   width: 90%;
   display: block;
   padding: 1em;
@@ -641,7 +664,7 @@ footer ul li a:hover:after {
   font-family:  "Work Sans", Helvetica, sans-serif;
   font-weight: lighter;
 }
-#form form button{ 
+#form form button{
   background-color: #1004c5;
   color: white;
   border: 0px transparent;
@@ -655,9 +678,9 @@ footer ul li a:hover:after {
   transition: all 0.6s;
   position: relative;
   border-radius: 100px;
-} 
+}
 
-#form form button::before { 
+#form form button::before {
   width: 30px;
   height: 30px;
   background: url('./Assets/right-arrow.svg');
@@ -671,7 +694,7 @@ footer ul li a:hover:after {
   top: 30%;
 }
 
-#form form #buttonDiv { 
+#form form #buttonDiv {
   cursor: pointer;
   width: 13vw;
 }
@@ -684,13 +707,13 @@ footer ul li a:hover:after {
 
 
 @keyframes sending {
-  from { 
+  from {
      opacity: 0.4;
      /* z-index: -1; */
   }
 
   to {
-    opacity: 0.8; 
+    opacity: 0.8;
     z-index: -1;
   }
 }
@@ -703,14 +726,14 @@ footer ul li a:hover:after {
 
 /* Styling for form on TABLET VIEW  */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  #form { 
+  #form {
     text-align: left;
     padding: 2em;
   }
-  #form form #buttonDiv { 
+  #form form #buttonDiv {
     width: 100vw;
   }
-  #form form button { 
+  #form form button {
     width: 30vw;
   }
 }
@@ -722,29 +745,29 @@ footer ul li a:hover:after {
 
 /* Styling for form on MOBILE VIEW  */
 @media (min-width: 320px) and (max-width: 480px) {
-  #form { 
+  #form {
     text-align: left;
     padding: 0.7em;
     width: 100%;
   }
-  #form form #buttonDiv { 
+  #form form #buttonDiv {
     width: 100vw;
   }
-  #form form button { 
+  #form form button {
     width: 60vw;
     padding: 0.8em 1.2em;
   }
-  #form form button::before { 
+  #form form button::before {
     width: 20px;
     height: 20px;
     left: 15%;
     top: 33%;
-  } 
-  #form form input, #form form textarea { 
+  }
+  #form form input, #form form textarea {
     width: 100%;
   }
 
-  #form form #buttonDiv { 
+  #form form #buttonDiv {
     width: 60vw;
   }
 }
